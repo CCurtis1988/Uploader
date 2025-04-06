@@ -26,7 +26,7 @@ AMI_Loader <- function(amidatpath) {
 } 
 
 drv <- dbDriver("SQLite")
-con <- dbConnect(drv, dbname = "~/R_trace2/R_trace2/R_Trace/appDep/AMI_Data.db")
+con <- dbConnect(drv, dbname = "AMI_Data.db")
 
 # Define server logic required to draw a histogram
 function(input, output, session) {
